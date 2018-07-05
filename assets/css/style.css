@@ -84,6 +84,7 @@ label {
     margin-bottom: 0;
     width: 20%;
     height: 20px;
+    box-shadow: 2px 2px 2px rgb(40, 17, 105);
 }
 
 .input-line {
