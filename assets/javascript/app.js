@@ -42,13 +42,17 @@ $(document).ready(function () {
         frequency = $('#frequency').val();
         $('#frequency').val('');
 
+        if (trainName == '' || trainDestination == '' || firstTrain == '' || frequency == '') {
+            alert('All fields require values in the correct format!');
+        } else {
+
         database.ref().push({
             name: trainName,
             destination: trainDestination,
             firstTrain: firstTrain,
             frequency: frequency
         });
-
+    }
     });
 
     //listen to firebase for child added and add a new train
