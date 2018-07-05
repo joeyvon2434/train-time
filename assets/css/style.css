@@ -1,7 +1,14 @@
+
+body{
+    font-family: 'Roboto', Arial, Sans-serif;
+    background: linear-gradient(45deg, #8860D0, #C1C8E4, #84CEEB)
+}
+
 #wrapper {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    
 }
 
 #main-title {
@@ -13,8 +20,9 @@
     margin-bottom: 2%;
     text-align: center;
     font-size: 40px;
-    background: rgb(238, 224, 212);
+    background: #5680E9;
     border-bottom: 3px solid rgb(40, 17, 105);
+    color: rgb(224, 224, 224);
 }
 
 #train-display {
@@ -23,7 +31,23 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 2%;
-    border: 1px solid black;
+    border: 2px solid rgb(40, 17, 105);
+    text-align: center;
+}
+
+th {
+    background: rgb(63, 111, 233);
+    font-size: 20px;
+    color: rgb(224, 224, 224);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgb(40, 17, 105);
+}
+
+td {
+    background: #C1C8D4;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 #new-train {
@@ -31,20 +55,37 @@
     width: 70%;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 2%;
-    border: 1px solid black;
+    padding-bottom: 15px;
+    background: #C1C8D4;
+    border: 2px solid rgb(40, 17, 105);
 }
 
 .input-field {
-    padding: 15px 30px;
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#submit-button {
+    margin-bottom: 0;
+    width: 20%;
+    height: 20px;
+}
+
+.input-line {
+    width: 100%;
 }
 
 footer {
-    position: absolute;
+    position: abosolute;
     bottom: 0;
     width: 100%;
     text-align: center;
+    margin-top: 15px;
     padding-top: 15px;
     padding-bottom: 8px;
     border-top: 3px solid rgb(40, 17, 105);
+    background: #5680E9;
 }

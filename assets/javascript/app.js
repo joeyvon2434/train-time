@@ -56,10 +56,6 @@ $(document).ready(function () {
     // get info for new train from firebase
     database.ref().on('child_added', function(snapshot) {
 
-        console.log(snapshot.val().name);
-        console.log(snapshot.val().destination);
-        console.log(snapshot.val().firstTrain);
-        console.log(snapshot.val().frequency);
 
         trainName = snapshot.val().name;
         trainDestination = snapshot.val().destination;
@@ -67,20 +63,19 @@ $(document).ready(function () {
         frequency = snapshot.val().frequency;
 
        var minutesFromStart= -1 * moment(firstTrain, 'HH:mm').diff(moment(), 'minutes');
-       console.log(minutesFromStart);
 
        //check if train has started
        if (minutesFromStart < 0) {
            nextTrainMinutes = -1 * minutesFromStart;
            nextTrain = firstTrain;
-           console.log('minutes' + nextTrainMinutes);
-           console.log('time: ' + nextTrain);
+      
        } else {
-           nextTrainMinutes = minutesFromStart % frequency;
+           nextTrainMinutes =frequency - minutesFromStart % frequency;
+           console.log('first: ' + firstTrain);
+           console.log('next: ' + nextTrainMinutes);
            var temp = moment().add(nextTrainMinutes, 'minutes');
            nextTrain = moment(temp, 'x').format('HH:mm');
-           console.log('minutes' + nextTrainMinutes);
-           console.log('time: ' + nextTrain);
+         
        }
 
        var newRow = $('<tr>');
