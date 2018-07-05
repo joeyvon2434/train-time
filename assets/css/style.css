@@ -23,6 +23,8 @@ body{
     background: #5680E9;
     border-bottom: 3px solid rgb(40, 17, 105);
     color: rgb(224, 224, 224);
+    box-shadow: 2px 2px 2px rgb(40, 17, 105);
+    text-shadow: 2px 2px 2px rgb(40, 17, 105);
 }
 
 #train-display {
@@ -33,6 +35,7 @@ body{
     margin-bottom: 2%;
     border: 2px solid rgb(40, 17, 105);
     text-align: center;
+    box-shadow: 2px 2px 2px rgb(40, 17, 105);
 }
 
 th {
@@ -42,10 +45,11 @@ th {
     padding-bottom: 5px;
     padding-top: 5px;
     border-bottom: 1px solid rgb(40, 17, 105);
+    text-shadow: 2px 2px 2px rgb(40, 17, 105);
 }
 
 td {
-    background: #C1C8D4;
+    background: rgb(193, 200, 212, 0.5);
     padding-bottom: 5px;
     padding-top: 5px;
 }
@@ -56,8 +60,11 @@ td {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 15px;
-    background: #C1C8D4;
+    background: rgb(193, 200, 212, 0.35);
     border: 2px solid rgb(40, 17, 105);
+    box-shadow: 2px 2px 2px rgb(40, 17, 105);
+    color: black;
+    text-shadow: 1px 1px 1px rgb(219, 219, 219);
 }
 
 .input-field {
@@ -66,6 +73,11 @@ td {
     padding-bottom: 15px;
     margin-left: auto;
     margin-right: auto;
+}
+
+label {
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 #submit-button {
