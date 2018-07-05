@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Train Schedule!</title>
+
+    <!--Stylesheet links-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Firebase script link-->
+    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <h1 id="main-title">Train Schedule</h1>
+
+        <table id="train-display">
+            <tr>
+                <th>Name</th>
+                <th>Destination</th>
+                <th>Frequency (min)</th>
+                <th>Next Arrival</th>
+                <th>Minutes Away</th>
+            </tr>
+
+            <!--Add trains into rows dynamically-->
+
+        </table>
+
+        <form id="new-train">
+            <div class='input-field'>
+                <label>Train Name</label>
+                <br>
+                <input id='train-name' type="text">
+                <br>
+            </div>
+
+            <div class='input-field'>
+                <label>Destination</label>
+                <br>
+                <input id='destination' type="text">
+                <br>
+            </div>
+
+            <div class='input-field'>
+                <label>First Train (hh:mm in military time)</label>
+                <br>
+                <input id='first-train' type="text">
+                <br>
+            </div>
+
+            <div class='input-field'>
+                <label>Frequency (minutes)</label>
+                <br>
+                <input id="frequency" type="text">
+                <br>
+            </div>
+
+            <div class='input-field'>
+                <input type="submit" id='submit-button'>
+            </div>
+        </form>
+
+
+        <footer>Joseph Von Edwins 2018</footer>
+
+    </div>
+    <!--close wrapper div-->
+
+    <!--moment.js link-->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!--JQuery link script-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+
+
+</body>
+
+</html>

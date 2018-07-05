@@ -1,0 +1,50 @@
+#wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+#main-title {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 2%;
+    text-align: center;
+    font-size: 40px;
+    background: rgb(238, 224, 212);
+    border-bottom: 3px solid rgb(40, 17, 105);
+}
+
+#train-display {
+    position: relative;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    border: 1px solid black;
+}
+
+#new-train {
+    position: relative;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2%;
+    border: 1px solid black;
+}
+
+.input-field {
+    padding: 15px 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    border-top: 3px solid rgb(40, 17, 105);
+}
